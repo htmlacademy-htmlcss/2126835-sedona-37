@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Алексей Погодин](https://up.htmlacademy.ru/htmlcss/37/user/2126835).
-* Наставник: `Ирина Малиновская`.
-Новое изменение
+* Наставник: `Ирина Малиновская`. https://htmlacademy.ru/profile/irina-malinovskaya
+
 
 ---
 
