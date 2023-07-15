@@ -7,10 +7,10 @@
   </head>
 <!-- Разметка хедера -->
 <body>
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <nav class="main-navigation">
         <a class="logo" href="index.html">
-          <img class="logo-image" src="#" width="140" height="70" alt="Логотип Седоны.">
+          <img class="logo-image" src="images\main-logo.svg" width="140" height="70" alt="Логотип Седоны.">
         </a>
         <ul class="navigation">
           <li class="navigation-item">
@@ -38,7 +38,7 @@
       <a class="main-link-button" href="#">Хочу сюда!</a>
     </header>
 <!--Основное содержание-->
-    <main class="page">
+    <main class="page" data-test="main">
       <section class="catalog-filter">
         <h1 class="catalog-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -51,7 +51,7 @@
             <a class="breadcrumbs-catalog" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
-        <form class="filter-info" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="filter-info" data-test="filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter-set">
             <legend class="set-title">Инфраструктура:</legend>
             <label class="infrastructure-name">
@@ -147,7 +147,7 @@
                 <h3 class="hotel-name">Amara Resort & Spa</h3>
               </a>
               <a class="hotel-link-img" href="#">
-                <img class="hotel-image" src="#" width="300" height="212" alt="Изображение отеля Amara Resort & Spa.">
+                <img class="hotel-image" src="images\catalog\hotels\hotel-1.jpg" width="300" height="212" alt="Изображение отеля Amara Resort & Spa.">
               </a>
               <p class="hotel-subject">Гостиница</p>
               <p class="hotel-minprice">От 4000 ₽</p>
@@ -163,7 +163,7 @@
                 <h3 class="hotel-name">Villas at Poco Diablo</h3>
               </a>
               <a class="hotel-link-img" href="#">
-                <img class="hotel-image" src="#" width="300" height="212" alt="Изображение отеля Villas at Poco Diablo.">
+                <img class="hotel-image" src="images\catalog\hotels\hotel-2.jpg" width="300" height="212" alt="Изображение отеля Villas at Poco Diablo.">
               </a>
               <p class="hotel-subject">Гостиница</p>
               <p class="hotel-minprice">От 5000 ₽</p>
@@ -179,7 +179,7 @@
                 <h3 class="hotel-name">Desert Quail Inn</h3>
               </a>
               <a class="hotel-link-img" href="#">
-                <img class="hotel-image" src="#" width="300" height="212" alt="Изображение отеля Desert Quail Inn.">
+                <img class="hotel-image" src="images\catalog\hotels\hotel-3.jpg" width="300" height="212" alt="Изображение отеля Desert Quail Inn.">
               </a>
               <p class="hotel-subject">Гостиница</p>
               <p class="hotel-minprice">От 2500 ₽</p>
@@ -195,7 +195,7 @@
                 <h3 class="hotel-name">GreenTree Inn</h3>
               </a>
               <a class="hotel-link-img" href="#">
-                <img class="hotel-image" src="#" width="300" height="212" alt="Изображение отеля GreenTree Inn.">
+                <img class="hotel-image" src="images\catalog\hotels\hotel-4.jpg" width="300" height="212" alt="Изображение отеля GreenTree Inn.">
               </a>
               <p class="hotel-subject">Гостиница</p>
               <p class="hotel-minprice">От 1500 ₽</p>
@@ -229,7 +229,7 @@
           </ul>
         </section>
       </div>
-      <section class="subscription-catalog">
+      <section class="subscription-catalog" data-test="subscribe">
         <h2 class="subscription-heading">Подпишитесь на рассылку</h2>
         <p class="subscription-comment">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="form-line" action="https://echo.htmlacademy.ru/" method="post">
@@ -240,7 +240,7 @@
         </form>
       </section>
     <!--Разметка Футера-->
-    <footer class="site-footer">
+    <footer class="site-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-list-item">
           <a class="social-item-link vkontakte" href="https://vk.com/htmlacademy">
