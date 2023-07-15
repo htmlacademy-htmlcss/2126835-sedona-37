@@ -37,7 +37,208 @@
       </nav>
       <a class="main-link-button" href="#">Хочу сюда!</a>
     </header>
-
+<!--Основное содержание-->
+    <main class="page">
+      <section class="catalog-filter">
+        <h1 class="catalog-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-home" href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-catalog" href="catalog.html" aria-current="page">Гостиницы</a>
+          </li>
+        </ul>
+        <form class="filter-info" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter-set">
+            <legend class="set-title">Инфраструктура:</legend>
+            <label class="infrastructure-name">
+              <input class="infrastructure-box visually-hidden" type="checkbox" name="swimming-pool" checked>
+              <span class="infrastructure-mark"></span>
+              <span class="infrastructure-item">Бассейн</span>
+            </label>
+            <label class="infrastructure-name">
+              <input class="infrastructure-box visually-hidden" type="checkbox" name="parking" checked>
+              <span class="infrastructure-mark"></span>
+              <span class="infrastructure-item">Парковка</span>
+            </label>
+            <label class="infrastructure-name">
+              <input class="infrastructurea-box visually-hidden" type="checkbox" name="Wi-Fi">
+              <span class="infrastructure-mark"></span>
+              <span class="infrastructure-item">Wi-Fi</span>
+            </label>
+          </fieldset>
+          <fieldset class="filter-set">
+            <legend class="set-title">Тип Жилья:</legend>
+            <label class="house-name">
+              <input class="house-radio visually-hidden" type="radio" name="housing-type" value="hotel" checked>
+              <span class="house-mark"></span>
+              <span class="housing-item">Гостиница</span>
+            </label>
+            <label class="house-name">
+              <input class="house-radio visually-hidden" type="radio" name="housing-type" value="motel">
+              <span class="house-mark"></span>
+              <span class="housing-item">Мотель</span>
+            </label>
+            <label class="house-name">
+              <input class="house-radio visually-hidden" type="radio" name="housing-type" value="apartments">
+              <span class="house-mark"></span>
+              <span class="housing-item">Апартаменты</span>
+            </label>
+          </fieldset>
+          <fieldset class="filter-set">
+            <legend class="set-title">Стоимость, ₽:</legend>
+            <div class="range">
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  <input class="prices-input input-from" type="number" name="min-price" value="0" required>
+                  <span class="prices-range prices-from">от</span>
+                </label>
+                <label class="catalog-filter-label">
+                  <input class="prices-input" type="number" name="max-price" value="9000" required>
+                  </label>
+                <span class="prices-range">до</span>
+              </div>
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="filter-buttons">
+            <button class="catalog-button" type="submit">Применить</button>
+            <button class="catalog-button" type="reset">Сбросить</button>
+          </div>
+        </form>
+      </section>
+      <div class="hotels-container">
+        <section class="hotels-info">
+          <h2 class="visually-hidden">Информация о гостиницах</h2>
+          <div class="found">
+            <p class="hotel-found">Найдено гостиниц: 38</p>
+            <select class="hotel-sorting" name="sorting" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+            <div class="cards-view-container">
+              <button class="hotel-card-view cards-view" type="button">
+                <span class="visually-hidden">Показать карточками</span>
+              </button>
+              <button class="hotel-card-view one-card-view" type="button">
+                <span class="visually-hidden">Показать по одному</span>
+              </button>
+              <button class="hotel-card-view card-list-view" type="button">
+                <span class="visually-hidden">Показать списком</span>
+              </button>
+            </div>
+          </div>
+          <ul class="hotel-list">
+            <li class="hotel-list-item">
+              <a class="hotel-link-name" href="#">
+                <h3 class="hotel-name">Amara Resort & Spa</h3>
+              </a>
+              <a class="hotel-link-img" href="#">
+                <img class="hotel-image" src="#" width="300" height="212" alt="Изображение отеля Amara Resort & Spa.">
+              </a>
+              <p class="hotel-subject">Гостиница</p>
+              <p class="hotel-minprice">От 4000 ₽</p>
+              <a href="#" class="catalog-button">Подробнее</a>
+              <button class="catalog-button" type="button">В избранное</button>
+              <span class="hotel-stars four-stars">
+                <span class="visually-hidden">4 звезды</span>
+              </span>
+              <span class="hotel-rating">Рейтинг: 8,5</span>
+            </li>
+            <li class="hotel-list-item">
+              <a class="hotel-link-name" href="#">
+                <h3 class="hotel-name">Villas at Poco Diablo</h3>
+              </a>
+              <a class="hotel-link-img" href="#">
+                <img class="hotel-image" src="#" width="300" height="212" alt="Изображение отеля Villas at Poco Diablo.">
+              </a>
+              <p class="hotel-subject">Гостиница</p>
+              <p class="hotel-minprice">От 5000 ₽</p>
+              <a href="#" class="catalog-button">Подробнее</a>
+              <button class="catalog-button" type="button">В избранном</button>
+              <span class="hotel-stars">
+                <span class="visually-hidden">4 звезды</span>
+              </span>
+              <span class="hotel-rating">Рейтинг: 9,2</span>
+            </li>
+            <li class="hotel-list-item">
+              <a class="hotel-link-name" href="#">
+                <h3 class="hotel-name">Desert Quail Inn</h3>
+              </a>
+              <a class="hotel-link-img" href="#">
+                <img class="hotel-image" src="#" width="300" height="212" alt="Изображение отеля Desert Quail Inn.">
+              </a>
+              <p class="hotel-subject">Гостиница</p>
+              <p class="hotel-minprice">От 2500 ₽</p>
+              <a href="#" class="catalog-button">Подробнее</a>
+              <button class="catalog-button" type="button">В избранное</button>
+              <span class="hotel-stars">
+                <span class="visually-hidden">3 звезды</span>
+              </span>
+              <span class="hotel-rating">Рейтинг: 6,9</span>
+            </li>
+            <li class="hotel-list-item">
+              <a class="hotel-link-name" href="#">
+                <h3 class="hotel-name">GreenTree Inn</h3>
+              </a>
+              <a class="hotel-link-img" href="#">
+                <img class="hotel-image" src="#" width="300" height="212" alt="Изображение отеля GreenTree Inn.">
+              </a>
+              <p class="hotel-subject">Гостиница</p>
+              <p class="hotel-minprice">От 1500 ₽</p>
+              <a href="#" class="catalog-button">Подробнее</a>
+              <button class="catalog-button" type="button">В избранное</button>
+              <span class="hotel-stars two-stars">
+                <span class="visually-hidden">2 звезды</span>
+              </span>
+              <span class="hotel-rating">Рейтинг: 5,0</span>
+            </li>
+          </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-link" href="catalog.html" aria-current="page">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="subscription-catalog">
+        <h2 class="subscription-heading">Подпишитесь на рассылку</h2>
+        <p class="subscription-comment">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="form-line" action="https://echo.htmlacademy.ru/" method="post">
+          <label>
+          <input class="subscription-form" type="email" name="subscription-mail" placeholder="Ваш e-mail" required>
+        </label>
+          <button class="subscription-button" type="submit">Подписаться</button>
+        </form>
+      </section>
     <!--Разметка Футера-->
     <footer class="site-footer">
       <ul class="social-list">
