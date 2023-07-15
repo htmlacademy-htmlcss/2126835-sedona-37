@@ -7,7 +7,7 @@
   </head>
 <!-- Разметка хедера -->
 <body>
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <nav class="main-navigation">
         <a class="logo" href="index.html">
           <img class="logo-image" src="#" width="140" height="70" alt="Логотип Седоны.">
@@ -39,8 +39,8 @@
     </header>
 
 <!--Основное содержание-->
-<main class="page"">
-  <div class="hero"">
+<main class="page" data-test="main">
+  <div class="hero" data-test="hero">
     <h1 class="visually-hidden">Добро пожаловать на сайт туристического города Седона</h1>
     <img class="hero-background" src="#" width="458" height="352" alt="Добро пожаловать в Седону!">
   </div>
@@ -94,12 +94,12 @@
       </li>
     </ul>
   </section>
-  <section class="hotel-search">
+  <section class="hotel-search" data-test="search">
     <h2 class="hotel-search-heading">Заинтересовались?</h2>
     <p class="hotel-dates">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     <a class="hotel-search-link" href="#">Поиск гостиницы в Седоне</a>
   </section>
-  <section class="subscription">
+  <section class="subscription" data-test="subscribe">
     <h2 class="subscription-heading">Подпишитесь на рассылку</h2>
     <p class="subscription-comment">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="form-line" action="https://echo.htmlacademy.ru/" method="post">
@@ -112,7 +112,7 @@
 </main>
 
 <!--Разметка Футера-->
-    <footer class="site-footer">
+    <footer class="site-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-list-item">
           <a class="social-item-link vkontakte" href="https://vk.com/htmlacademy">
